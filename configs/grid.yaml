@@ -1,0 +1,61 @@
+EXP_NAME: pama
+SEED: 42
+
+DATASET:
+  datadir: 'datasets\MVTec'
+  texture_source_dir: 'datasets\dtd\images'
+  target: 'grid'
+  resize: !!python/tuple
+    - 256 # height
+    - 256 # width
+  structure_grid_size: 8
+  transparency_range:
+    - 0.15 # under bound
+    - 1. # upper bound
+  perlin_scale: 6
+  min_perlin_scale: 0
+  perlin_noise_threshold: 0.5
+
+DATALOADER:
+  batch_size: 16
+  num_workers: 4
+
+MEMORYBANK:
+  nb_memory_sample: 1
+
+MODEL:
+  feature_extractor_name: 'resnet18'
+
+TRAIN:
+  batch_size: 16
+  num_training_steps: 3000
+  l1_weight: 0.6
+  focal_weight: 0.4
+  focal_alpha: null
+  focal_gamma: 4
+  use_wandb: True
+
+OPTIMIZER:
+  lr: 0.003
+  weight_decay: 0.0005
+
+SCHEDULER:
+  min_lr: 0.0001
+  warmup_ratio: 0.1
+  use_scheduler: True
+
+LOG:
+  log_interval: 1
+  eval_interval: 100
+
+RESULT:
+  savedir: './saved_model'
+
+#  {
+#    "latest_step": 5000,
+#    "eval_AUROC-image": 0.9540518522262573,
+#    "eval_AUROC-pixel": 0.7303870916366577,
+#    "eval_AUPRO-pixel": 0.5616928935050964,
+#    "_timestamp": 1667263971,
+#    "_runtime": 6084
+#  }
