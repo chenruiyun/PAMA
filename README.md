@@ -21,4 +21,3 @@ AnomalyDiffusion(AnomalyDiffusion: Few-Shot Anomaly Image Generation with Diffus
 # Note
 Both the memory bank and the network weights are objects that need to be saved
 
-The complete code will be released after it has been organized.
