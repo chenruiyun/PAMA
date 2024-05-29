@@ -1,5 +1,6 @@
 # PAMA
-Implementation for PAMA: Patch Matching for Few-shot Industrial Defect Detection
+Implementation for PAMA: \
+"Patch Matching for Few-shot Industrial Defect Detection"
 
 # Environments
 anomalib==0.3.7 \
@@ -16,9 +17,7 @@ AnomalyDiffusion([AnomalyDiffusion: Few-Shot Anomaly Image Generation with Diffu
 
 # Run
 ## Example 
---yaml_config
-./configs/grid.yaml
+python main.py --yaml_config ./configs/grid.yaml
 
 # Note
-Both the memory bank and the network weights are objects that need to be saved
-
+During the inference process, the grid weights file and the grid memory bank weights file are required.
