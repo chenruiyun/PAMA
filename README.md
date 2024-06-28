@@ -1,6 +1,9 @@
 # PAMA
 Implementation for PAMA: \
-"Patch Matching for Few-shot Industrial Defect Detection"
+"Patch Matching for Few-shot Industrial Defect Detection" \
+
+Chen, Ruiyun, Guitao Yu, Zhen Qin, Kangkang Song, Jianfei Tu, Xianliang Jiang, Dan Liang, and Chengbin Peng. “Patch Matching for Few-shot Industrial Defect Detection.” IEEE Transactions on Instrumentation and Measurement (2024). 
+
 ```
 @ARTICLE{10555421,
   author={Chen, Ruiyun and Yu, Guitao and Qin, Zhen and Song, Kangkang and Tu, Jianfei and Jiang, Xianliang and Liang, Dan and Peng, Chengbin},
